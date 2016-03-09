@@ -9,3 +9,4 @@ echo render('layout', [
     'currencyWidget' => currencyWidget($curr),
     'priceWidget' => priceWidget($curr)
 ]);
+echo "";
