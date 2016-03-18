@@ -1,0 +1,49 @@
+@startuml
+
+abstract class AbstractWidget implements IWidget {
+$currency
+method __construct($curr)
+method __toString()
+abstract method display()
+}
+interface IWidget {
+method display()
+}
+class Currency {
+$currency
+const DEFAULT_CURRENCY = 'grn'
+method getCurrency()
+method function setCurrency($currency)
+}
+class CurrencyWidget extends AbstractWidget {
+method display()
+}
+class Paginator {
+$conn
+$perPage = 10;
+method __construct($conn)
+method getOffsetData()
+}
+class PaginatorWidget extends AbstractWidget {
+$conn
+method __construct($conn)
+method display()
+}
+class PriceWidget extends AbstractWidget {
+$conn
+$curr
+method __construct($curr, $conn)
+method display()
+}
+class UsernameWidget extends AbstractWidget {
+$conn
+method __construct($conn)
+method __toString()
+method display()
+}
+class View {
+method render($template, array $environment = [])
+}
+
+
+@enduml
