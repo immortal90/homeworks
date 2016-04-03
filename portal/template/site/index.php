@@ -24,13 +24,13 @@
     з найвищих життєвих пріоритетів. Вірю, що «Джерельце сімейного щастя» принесе велику користь мамам,татусям,
     дітям і усім людям, яких цікавить майбутнє нашого суспільства.</p>
 <div class="product">
-    <a href = "#"><img src="assets/images/product1.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product2.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product3.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product4.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product5.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product6.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product7.gif" alt="product"/></a>
-    <a href="#"><img src="assets/images/product8.gif" alt="product"/></a>
+    <a href = "#"><img src="/assets/images/product1.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product2.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product3.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product4.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product5.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product6.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product7.gif" alt="product"/></a>
+    <a href="#"><img src="/assets/images/product8.gif" alt="product"/></a>
     <div class="clear"></div>
 </div>

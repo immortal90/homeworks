@@ -15,7 +15,7 @@ class BaseController
     public function redirect($url)
     {
         if (empty($url)) {
-            $url = Application::getConfig('defaultController') . '/index';
+            $url = Application::getConfig('defaultController') . DIRECTORY_SEPARATOR .'index';
         }
         header('Location: ' . $url);
     }
@@ -26,7 +26,7 @@ class BaseController
         extract($environment);
 
         ob_start();
-        $viewPath = 'template/' . $controllerFolder .'/'. $view . '.php';
+        $viewPath = 'template' . DIRECTORY_SEPARATOR . $controllerFolder .DIRECTORY_SEPARATOR. $view . '.php';
         if (is_file($viewPath) === false) {
             throw new Exception('cannot render view file : ' . $viewPath);
         }
@@ -35,7 +35,7 @@ class BaseController
 
 //        return $this->content;
 //        ob_start();
-        $layoutPath = 'template/layouts/'. $this->layout . '.php';
+        $layoutPath = 'template'. DIRECTORY_SEPARATOR .'layouts'. DIRECTORY_SEPARATOR . $this->layout . '.php';
         if (is_file($layoutPath) === false) {
             throw new Exception('cannot render layout file : ' . $layoutPath);
         }

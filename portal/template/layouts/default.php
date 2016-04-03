@@ -20,7 +20,8 @@
                 <div id="menu">
                     <ul>
                         <li><a href="/site/index">Головна</a></li>
-                        <?php foreach ((new NewsModel())->getCategories() as $category) : ?>
+                        <?php $newsModel = new NewsModel(); ?>
+                        <?php foreach ($newsModel->getCategories() as $category) : ?>
                             <li><a href="/site/category?category=<?=urlencode($category)?>"><?=$category?></a></li>
                         <?php endforeach; ?>
                         <li><a href="/site/contacts">Контакти</a></li>

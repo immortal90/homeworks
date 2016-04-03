@@ -66,7 +66,7 @@ class Router
         }
 
         $nameController = ucfirst($controller) . 'Controller';
-        $pathController = __DIR__ . '\..\controllers\\' . $nameController . '.php';
+        $pathController = __DIR__ . DIRECTORY_SEPARATOR . '..'. DIRECTORY_SEPARATOR .'controllers' . DIRECTORY_SEPARATOR . $nameController . '.php';
 
         if (!is_file($pathController)) {
             throw new Exception('file not exist', 404);
