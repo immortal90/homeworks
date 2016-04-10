@@ -9,8 +9,7 @@ if ($_SERVER['HTTP_HOST'] == 'www.djerelce.com.ua') {
 session_start();
 
 define('DEFAULT_USER_ID', 1);
-
-require_once 'bootstrap.php';
+require 'vendor/autoload.php';
 
 $router = new Router();
 

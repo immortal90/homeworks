@@ -14,6 +14,7 @@ class UserController extends BaseController
 
             if ($result) {
                 $_SESSION['user_login'] = $result['user_login'];
+                $_SESSION['user_id'] = $result['id'];
                 $this->redirect('/');
             } else {
                 $err = '<h2>Вы ввели неправильный логин/пароль</h2>';
@@ -25,6 +26,7 @@ class UserController extends BaseController
     public function actionLogout()
     {
         unset($_SESSION['user_login']);
+        unset($_SESSION['user_id']);
 
         $this->redirect('/');
     }
@@ -48,4 +50,5 @@ class UserController extends BaseController
         }
         $this->render('register', ['err' => $err]);
     }
+
 }

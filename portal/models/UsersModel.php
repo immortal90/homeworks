@@ -31,7 +31,7 @@ class UsersModel extends BaseModel
 
         # проверяем, не сущестует ли пользователя с таким именем
         $this->perPage=1;
-        $sql = sprintf("SELECT user_id FROM %s WHERE user_login='%s' LIMIT %s OFFSET %s", $this->tableName, $user['user_login'], $this->perPage, $this->offset);
+        $sql = sprintf("SELECT id FROM %s WHERE user_login='%s' LIMIT %s OFFSET %s", $this->tableName, $user['user_login'], $this->perPage, $this->offset);
         /** @var PDOStatement $statement */
         $statement = $this->conn->query($sql);
         $result = $statement->fetchAll(PDO::FETCH_COLUMN);

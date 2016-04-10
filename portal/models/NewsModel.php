@@ -32,6 +32,11 @@ class NewsModel extends BaseModel
         $statement = $this->conn->query($sql);
 
         $result = $statement->fetchAll();
+        $comment = new CommentsModel();
+
+        foreach ($result as $key => $newsArray) {
+            $result[$key]['comments'] = $comment->getComments($newsArray['news_id']);
+        }
 
         return $result;
     }

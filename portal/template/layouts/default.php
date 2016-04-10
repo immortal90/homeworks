@@ -8,6 +8,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Джерельце, Блог, Стаття, Психолог, Порада, Діти, Щастя,
+        Домопомога " />
+    <meta name="description" content="Джерельце, Щаслива сімя, Діти, Психолог" />
     <link href="/assets/style.css" rel="stylesheet" type="text/css"/>
     <title>Джерельце сімейного щастя</title>
 </head>

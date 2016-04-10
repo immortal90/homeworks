@@ -16,12 +16,6 @@ class Router
     public  function delegate()
     {
         $url = trim(self::$url, '/\\');
-        //TODO regexp routing
-//        $rules = require_once ('../config/routing.php');
-//        foreach($rules as $rule) {
-//        }
-//        var_dump($url);
-//        die;
         $args = [];
         $isStandardArgs = strstr($url, '?');
         $standardArgs = [];
